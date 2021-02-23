@@ -3245,6 +3245,8 @@ MemberList::MemberMap FunctionType::nativeMembers(ASTNode const* _scope) const
 		}
 		return {};
 	}
+	case Kind::Error:
+		return {{"selector", TypeProvider::fixedBytes(4)}};
 	default:
 		return MemberList::MemberMap();
 	}

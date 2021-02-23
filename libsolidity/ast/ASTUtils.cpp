@@ -72,5 +72,4 @@ VariableDeclaration const* rootConstVariableDeclaration(VariableDeclaration cons
 	return rootDecl;
 }
 
-
 }
